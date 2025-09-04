@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rentlee - Conciergerie</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --rentlee-green: #00b050;
+      --rentlee-dark: #111;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .navbar-brand img {
+      height: 80px;
+    }
+    .hero {
+      background: url('Salon.png') center center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 140px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .btn-rentlee {
+      background-color: var(--rentlee-green);
+      color: white;
+      border: none;
+    }
+    .btn-rentlee:hover {
+      background-color: #009040;
+      color: white;
+    }
+    section {
+      padding: 80px 20px;
+    }
+    footer {
+      background: var(--rentlee-dark);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="Rentlee.png" alt="Rentlee Logo"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why-us">Pourquoi nous choisir ?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero d-flex align-items-center">
+  <div class="container hero-content">
+    <h1 class="display-3 fw-bold">Rentlee</h1>
+    <p class="lead">Smart stays, stress-free</p>
+    <a href="#contact" class="btn btn-lg btn-rentlee mt-3">Demander un devis</a>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="text-center">
+  <div class="container">
+    <h2 class="mb-5">Nos Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm p-4 h-100">
+          <img src="conciergerie.jpg" class="card-img-top mb-3" alt="Conciergerie">
+          <h3>Conciergerie</h3>
+          <p>Nous prenons en charge toutes les étapes de l’accueil voyageurs : remise des clés, état des lieux, ménage professionnel, linge de maison de qualité hôtelière et assistance 24/7.
+            Avec Rentlee, vos invités bénéficient d’un séjour sans tracas, ce qui garantit des avis positifs et une meilleure réputation pour votre bien.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm p-4 h-100">
+          <img src="gestion.png" class="card-img-top mb-3" alt="Gestion locative">
+          <h3>Gestion Locative</h3>
+          <p>Notre équipe assure une gestion complète et optimisée de vos biens : création et mise en valeur des annonces, photos attractives, tarification dynamique adaptée à la demande, suivi des réservations et gestion du calendrier.
+            Vous recevez également un reporting régulier et transparent afin de suivre vos revenus et performances locatives en toute simplicité.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm p-4 h-100">
+          <img src="accompagnement.jpg" class="card-img-top mb-3" alt="Accompagnement">
+          <h3>Accompagnement</h3>
+          <p>Au-delà de la gestion, Rentlee vous accompagne avec des conseils personnalisés adaptés à votre situation : choix des plateformes de diffusion, optimisation fiscale, stratégies de fidélisation.
+            Notre objectif est clair : vous aider à maximiser vos revenus locatifs tout en réduisant au minimum vos efforts et contraintes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">À propos de nous</h2>
+    <p class="mx-auto" style="max-width: 700px;">
+      Chez Rentlee, nous sommes convaincus qu’un logement bien géré est la clé d’une expérience sans stress, autant pour les propriétaires que pour les voyageurs.
+      Notre mission est simple : offrir un service haut de gamme, fiable et transparent, qui permet aux propriétaires de rentabiliser leur bien en toute sérénité, tout en garantissant aux voyageurs un séjour fluide et agréable.
+    </p>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="text-center">
+  <div class="container">
+    <h2 class="mb-5">Galerie</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="Appartement 1.png" class="img-fluid rounded shadow-sm" alt="Appartement 1"></div>
+      <div class="col-md-4"><img src="appart2.jpg" class="img-fluid rounded shadow-sm" alt="Appartement 2"></div>
+      <div class="col-md-4"><img src="appart3.jpg" class="img-fluid rounded shadow-sm" alt="Appartement 3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pourquoi nous choisir -->
+<section id="why-us" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-5">Pourquoi nous choisir ?</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-3">
+        <div class="p-4 shadow-sm rounded bg-white h-100">
+          <div class="mb-3">
+            <i class="bi bi-clock-history" style="font-size: 2rem; color: #00b050;"></i>
+          </div>
+          <h5>Assistance 24/7</h5>
+          <p>Disponibilité permanente pour vos voyageurs et une gestion sans interruptions.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-4 shadow-sm rounded bg-white h-100">
+          <div class="mb-3">
+            <i class="bi bi-graph-up-arrow" style="font-size: 2rem; color: #00b050;"></i>
+          </div>
+          <h5>Revenus optimisés</h5>
+          <p>Tarification dynamique et stratégie adaptée pour maximiser vos revenus locatifs.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-4 shadow-sm rounded bg-white h-100">
+          <div class="mb-3">
+            <i class="bi bi-house-door" style="font-size: 2rem; color: #00b050;"></i>
+          </div>
+          <h5>Service clé en main</h5>
+          <p>De la remise des clés au ménage, nous nous occupons de tout à votre place.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="p-4 shadow-sm rounded bg-white h-100">
+          <div class="mb-3">
+            <i class="bi bi-shield-check" style="font-size: 2rem; color: #00b050;"></i>
+          </div>
+          <h5>Transparence totale</h5>
+          <p>Un reporting clair et régulier pour suivre vos performances locatives en toute confiance.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- FAQ -->
+<section id="faq" class="text-center">
+  <div class="container">
+    <h2 class="mb-5">FAQ</h2>
+    <div class="accordion mx-auto" style="max-width: 700px;" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+            Comment fonctionne la conciergerie Rentlee ?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Nous gérons tout de A à Z : accueil, ménage, communication et assistance voyageurs.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+            Quels types de biens gérez-vous ?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Appartements, maisons, studios… tant que c’est destiné à la location courte durée.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+            Combien coûtent vos services ?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Nos tarifs dépendent du bien et des services choisis. Contactez-nous pour un devis personnalisé.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Contactez-nous</h2>
+    <form 
+      action="https://formspree.io/f/xeolpkdd"
+      method="POST"
+      class="mx-auto"
+      style="max-width: 600px; text-align: left;"
+    >
+      <div class="mb-3">
+        <label for="email" class="form-label">Votre email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="exemple@mail.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Votre message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-rentlee btn-lg w-100">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Rentlee - Tous droits réservés</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
