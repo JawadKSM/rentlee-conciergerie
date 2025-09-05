@@ -135,17 +135,67 @@
   </div>
 </section>
 
-<!-- Gallery -->
-<section id="gallery" class="text-center">
+<!-- Galerie -->
+<section id="gallery" class="text-center py-5">
   <div class="container">
     <h2 class="mb-5">Galerie</h2>
     <div class="row g-3">
-      <div class="col-md-4"><img src="Appartement 1.png" class="img-fluid rounded shadow-sm" alt="Appartement 1"></div>
-      <div class="col-md-4"><img src="appart2.jpg" class="img-fluid rounded shadow-sm" alt="Appartement 2"></div>
-      <div class="col-md-4"><img src="appart3.jpg" class="img-fluid rounded shadow-sm" alt="Appartement 3"></div>
+
+      <!-- Appartement 1 -->
+      <div class="col-md-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#appart1Modal">
+          <img src="Appartement 1.png" class="img-fluid rounded shadow-sm" alt="Appartement 1">
+        </a>
+      </div>
+
+      <!-- Appartement 2 -->
+      <div class="col-md-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#appart2Modal">
+          <img src="appart2.png" class="img-fluid rounded shadow-sm" alt="Appartement 2">
+        </a>
+      </div>
+
+      <!-- Appartement 3 -->
+      <div class="col-md-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#appart3Modal">
+          <img src="appart3.png" class="img-fluid rounded shadow-sm" alt="Appartement 3">
+        </a>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Modals -->
+<div class="modal fade" id="appart1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="Appartement 1.png" class="img-fluid w-100" alt="Appartement 1 grand format">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="appart2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="appart2.png" class="img-fluid w-100" alt="Appartement 2 grand format">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="appart3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="appart3.png" class="img-fluid w-100" alt="Appartement 3 grand format">
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Pourquoi nous choisir -->
 <section id="why-us" class="py-5 bg-light text-center">
